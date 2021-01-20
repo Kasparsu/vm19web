@@ -8,8 +8,11 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" v-model="textvalue">
-        <h2>{{ textvalue }}</h2>
+        <input type="text" v-model="textvalue" @keydown.space.prevent="add">
+        <button @click="add">add</button>
+        <ul>
+            <li v-for="(item, key) in items" :key="key">{{item}}</li>
+        </ul>
     </div>
     <script src="main.js"></script>
 </body>
