@@ -1,0 +1,20 @@
+$color: rgb(221, 114, 224);
+
+button {
+    background-color: $color;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: lighten($color, 20%);
+}
+
+button:active {
+    background-color: darken($color, 20%);
+}
