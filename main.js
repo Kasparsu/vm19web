@@ -1,12 +1,8 @@
-const hello = require('./module.js');
-hello();
-let $console = require('Console');
-a = 'qianzhixiang';
-b = 'jianghuihui';
-$console.log(a, b);
-$console.log('This is a LOG message');
-$console.debug('This is a DEBUG message');
-$console.error('This is a ERROR message');
-$console.warn('This is a WARN message');
-$console.stress('This is a STRESS message');
-$console.success('This is a SUCCESS message');
+import Vue from 'vue/dist/vue.common.js';
+
+let App = new Vue({
+    el: '#app',
+    data: {
+        textvalue: ''
+    }
+});
