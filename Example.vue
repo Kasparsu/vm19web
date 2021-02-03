@@ -9,6 +9,15 @@
 <script>
 export default {
   name: "Example",
+  created(){
+    console.log('created');
+  },
+  mounted(){
+    console.log('mounted');
+  },
+  updated(){
+    console.log('updated');
+  },
   props: {
     name: String,
     age: {
@@ -19,6 +28,7 @@ export default {
       }
     }
   },
+
   methods: {
     changed(e){
       this.$emit('rename', e.target.value);

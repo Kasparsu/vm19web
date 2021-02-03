@@ -1,27 +1,18 @@
 <template>
   <div>
-    <example name="Kaspar" :age="28"></example>
-    <example :name="name" :age="age" @rename="changeName"></example>
-
+    <clicker></clicker>
   </div>
 </template>
 
 <script>
-import Example from "./Example";
+import Clicker from "./Clicker";
 export default {
   name: "App",
-  components: {Example},
+  components: {Clicker},
   data() {
-    return {
-      age: 10,
-      name: "Pets"
-    }
+    return {}
   },
-  methods: {
-    changeName(newName){
-      this.name = newName;
-    }
-  }
+  methods: {}
 }
 </script>
 
